@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+        <title>Contactos</title>
+    </head>
+    <body class="grid-contenedor-padre">
+        <header class="header">
+            <div class="header-start">
+                <a href="/index.html" class="logo">
+                    <img src="../images/logos/logo.png" />
+                </a>
+                <h1>Blackbirds PetShop</h1>
+            </div>
+            <div class="header-end">
+                <input
+                    type="text"
+                    name="buscador"
+                    id="buscador"
+                    placeholder="Buscar.."
+                />
+                <a href="#login" class="header-boton">
+                    <img
+                        src="../images/entrar.png"
+                        alt="login"
+                        class="header-icon"
+                    />
+                    <p>Ingresar</p>
+                </a>
+                <a href="#carrito" class="header-boton">
+                    <img
+                        src="../images/carrito-de-compras.png"
+                        alt="carro-compra"
+                        class="header-icon"
+                    />
+                    <p>Mi carrito</p>
+                </a>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/alimentos.html">Alimentos</a></li>
+                <li><a href="../pages/camas.html">Camas</a></li>
+                <li><a href="../pages/contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <h2>Contacto</h2>
+            <div class="formulario-contacto">
+                <form action="" method="">
+                    <div class="input-grupo">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="input-grupo">
+                        <label for="last">Apellido</label>
+                        <input type="text" name="last" id="last" />
+                    </div>
+                    <div class="input-grupo">
+                        <label for="age">Edad</label>
+                        <input type="number" name="age" id="age" />
+                    </div>
+                    <div class="input-grupo">
+                        <label for="email">Correo</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div class="input-grupo">
+                        <label> Tu mascota es:</label>
+                        <select name="mascota" class="options">
+                            <option value="Aves">Aves</option>
+                            <option value="Gatos">Gatos</option>
+                            <option value="Perros">Perros</option>
+                            <option value="Peces">Peces</option>
+                        </select>
+                    </div>
+                    <div class="comentario-grupo">
+                        <label for="comentario">Comentario</label>
+                        <textarea
+                            name="comentario"
+                            placeholder="Dejanos tu comentario"
+                        ></textarea>
+                    </div>
+
+                    <input type="submit" class="enviar" />
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>
+                Derechos reservados lor sit amet consectetur adipisicing elit.
+                Nostrum, dolor. Ad magnam mini
+            </p>
+            <div class="contenedor-redes">
+                <a href="#instagram">
+                    <img
+                        src="../images/logos/instagram.png"
+                        alt="logo-instagram"
+                        class="redes"
+                    />
+                </a>
+                <a href="#facebook">
+                    <img
+                        src="../images/logos/facebook.png"
+                        alt="logo-facebook"
+                        class="redes"
+                    />
+                </a>
+                <a href="#whatsapp">
+                    <img
+                        src="../images/logos/whatsapp.png"
+                        alt="logo-whatsapp"
+                        class="redes"
+                    />
+                </a>
+                <a href="#twitter">
+                    <img
+                        src="../images/logos/twitter.png"
+                        alt="logo-twitter"
+                        class="redes"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

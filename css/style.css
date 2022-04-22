@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*contenedor grid padre*/
+
+.grid-contenedor-padre > * {
+    text-align: center;
+    background-color:#F6E7D8;
+}
+
+.grid-contenedor-padre {
+    display: grid;
+    grid-template:
+        "header" auto
+        "navbar" 60px
+        "main" auto
+        "aside" auto
+        "footer" auto;
+}
+
+/* header */
+.header {
+    grid-area: header;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C65D7B;
+    color: white;
+}
+
+.header-boton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-boton > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.header .header-start {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .header-end a {
+    margin-left: 12px;
+    padding: 10px;
+    background-color: #874356;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.header .header-end input {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.header-start > .logo,
+.header-start > .logo > img {
+    max-width: 240px;
+    max-height: 135px;
+}
+
+/* navbar */
+.navbar-respon {
+    display: none;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #F68989;
+}
+
+.navbar ul {
+    width: 50%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: #874356;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* main */
+.main {
+    grid-area: "main";
+}
+main {
+    color: white;
+}
+/* main*/
+
+.banner {
+    width: auto;
+    height: 450px;
+    background-image: url("../images/banner.jpg");
+    background-position: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*cards*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.cards > * {
+    text-decoration: none;
+}
+
+.card > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.card {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #F68989;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.images-card {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: white;
+    background-color: #F68989;
+    padding: 10px;
+}
+
+h3 {
+    color: white;
+    background-color: #C65D7B;
+    padding: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+/*aside---- medios de pago*/
+
+.aside {
+    background-color:white;
+    grid-area: aside;
+}
+
+aside .banks img {
+    margin: 0px 30px 0px 30px;
+    width: 100px;
+    height: 100px;
+}
+
+aside p {
+    background-color: pink;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #C65D7B;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: white;
+   
+}
+
+footer > p {
+    height: auto;
+    text-align: left;
+}
+
+footer > .contenedor-redes {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .redes,
+footer .redes > img {
+    width: 28px;
+    height: 28px;
+}
+
+/*---FORMULARIO HTML-----*/
+
+.formulario-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    background-color: #F68989;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px auto;
+    margin: 15px auto;
+}
+
+.input-grupo {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.input-grupo > input,
+.input-grupo > select,
+.enviar {
+    width: 200px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.comentario-grupo {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario-grupo > label {
+    margin-bottom: 8px;
+}
+
+.options {
+    margin: 10px;
+    padding: 8px;
+    width: 150px;
+}
+
+textarea {
+    width: 300px;
+    margin-left: 10px;
+    height: 100px;
+    padding: 10px;
+}
+
+/*---MEDIOS DE PAGO HTML-----*/
+.table-bancos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+table,
+td {
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+/*--- @MEDIA----*/
+
+@media (max-width: 500px) {
+    .header {
+        padding: 8px 16px;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .header .logo,
+    .header-boton p,
+    .header-end input,
+    .banner {
+        display: none;
+    }
+
+    .header .header-end {
+        justify-content: flex-end;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .images-card {
+        width: 90%;
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    footer > .contenedor-redes {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+
+    form {
+        width: 80%;
+    }
+}
