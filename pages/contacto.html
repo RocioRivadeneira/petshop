@@ -4,8 +4,17 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet"
+    />
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
         <title>Contactos</title>
     </head>
     <body class="grid-contenedor-padre">
@@ -14,16 +23,22 @@
                 <a href="/index.html" class="logo">
                     <img src="../images/logos/logo.png" />
                 </a>
-                <h1>Blackbirds PetShop</h1>
+                <h1 class="animate__animated animate__bounce">
+                    Blackbirds PetShop
+                </h1>
             </div>
             <div class="header-end">
+                
                 <input
                     type="text"
                     name="buscador"
                     id="buscador"
                     placeholder="Buscar.."
+                    class="input-buscador"
                 />
-                <a href="#login" class="header-boton">
+            
+            <div class="boton-header">
+                <a href="#login">
                     <img
                         src="../images/entrar.png"
                         alt="login"
@@ -31,7 +46,9 @@
                     />
                     <p>Ingresar</p>
                 </a>
-                <a href="#carrito" class="header-boton">
+            </div>
+            <div class="boton-header">
+                <a href="#carrito">
                     <img
                         src="../images/carrito-de-compras.png"
                         alt="carro-compra"
@@ -40,6 +57,7 @@
                     <p>Mi carrito</p>
                 </a>
             </div>
+        </div>
         </header>
 
         <nav class="navbar">
@@ -52,7 +70,7 @@
         </nav>
 
         <main class="main">
-            <h2>Contacto</h2>
+            <div class="titulo"><h2>Contacto</h2></div>
             <div class="formulario-contacto">
                 <form action="" method="">
                     <div class="input-grupo">
